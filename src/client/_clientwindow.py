@@ -115,7 +115,7 @@ class ClientWindow(FormClass, BaseClass):
     local_broadcast = QtCore.pyqtSignal(str, str)
     auto_join = QtCore.pyqtSignal(list)
     channels_updated = QtCore.pyqtSignal(list)
-    unofficial_client = QtCore.pyqtSignal(str)
+    # unofficial_client = QtCore.pyqtSignal(str)
 
     matchmaker_info = QtCore.pyqtSignal(dict)
     party_invite = QtCore.pyqtSignal(dict)
@@ -2083,7 +2083,8 @@ class ClientWindow(FormClass, BaseClass):
                 )
                 self.local_broadcast.emit("Scores", message["text"])
             elif "You are using an unofficial client" in message["text"]:
-                self.unofficial_client.emit(message["text"])
+                # self.unofficial_client.emit(message["text"])
+                {}
             else:
                 QtWidgets.QMessageBox.information(
                     self, "Notice from Server", message["text"],
