@@ -1,7 +1,8 @@
 cx_Freeze==5.0.2
 ipaddress
 pathlib
-pyqt5
+pyqt5==5.9
+pyqt5-tools==5.9.2.1.4rc0
 pytest
 pytest-cov
 pytest-mock
