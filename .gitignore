@@ -11,6 +11,7 @@
 *.pydev*
 *.vcproj
 .idea/
+venv/
 lib/
 build/
 dist/
@@ -33,3 +34,4 @@ audio
 imageformats
 platforms
 *.json
+.MyTests/
