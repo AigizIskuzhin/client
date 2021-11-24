@@ -116,8 +116,8 @@ QTabWidget#matchmakerQueues > QTabBar::tab::selected
 
 QTabWidget #lobbyTab,#gamesTab,#ladderTab,#tournamentTab,#coopTab,#replaysTab,#vaultsTab,#mapsTab,#modsTab
 { /* sets background color for every widget under a tab */
-    background-color: rgb(30,30,30);
-    border-radius: 10px;
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(15, 15, 15, 200), stop:1 #2f2f2f);
+        border-radius: 10px;
 }
 
 QTabWidget#mainTabs::tab-bar
@@ -131,17 +131,17 @@ QTabWidget#mainTabs::tab-bar
 QWidget#centralwidget, QProgressDialog, QWindow, QWizard
 {
     color: silver;
-    /* background-image: url('%THEMEPATH%/client/stripe.png'); */
-    /* background-position: top left; */
-    /* background-repeat:repeat-x; */
-    background-color: rgb(32.5,32.5,32.5);
+    background-image: url('%THEMEPATH%/client/stripe.png');
+    background-position: top left;
+    background-repeat:repeat-x;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #FFFFFF, stop:0.1 #000000, stop:1 #1F1F1F);
 }
 
 
 QTabWidget#mainTabs::pane
 { /* The tab widget frame */
 
-    background-color: rgb(47,47,47);
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(15, 15, 15, 200), stop:1 #2f2f2f);
     border-radius: 5px;
 
 }
@@ -149,7 +149,7 @@ QTabWidget#mainTabs::pane
 /* Style the tab using the tab sub-control. Note that it reads QTabBar _not_ QTabWidget */
 QTabWidget#mainTabs > QTabBar::tab
 {
-    background-color: rgb(30,30,30);
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:1 #555555, stop:0 #333333);
     color: silver;
     min-width: 80px;
     padding:2px;
